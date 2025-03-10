@@ -1,0 +1,132 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Navbar */
+  nav {
+    background:#ff4d4d;
+    padding: 10px 20px;
+    display: flex;
+   /* justify-content:space-between;
+    align-items: center;*/
+    height:12vh ;
+    border-bottom-right-radius:30px;
+    border-bottom-left-radius: 30px;
+    
+    
+  }
+  
+  nav a {
+    color:white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    
+  }
+
+  
+  nav button {
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+  }
+  
+  nav button:hover {
+    background: #e60000;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex
+  }
+    
+  /* Job Listings */
+  .job-card {
+    background: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-card h3 {
+    color: #007bff;
+  }
+  
+  .job-card a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .job-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Forms */
+  form {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input,
+  form button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .job-card {
+      padding: 15px;
+    }
+  }
+  
