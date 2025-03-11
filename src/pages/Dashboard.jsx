@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { fetchJobs, deleteJob } from "../services/api";
 import { AuthContext } from "../context/AuthContext";
+import Home from "./Home";
 
 const Dashboard = () => {
   const { user } = useContext(AuthContext);
@@ -21,12 +22,13 @@ const Dashboard = () => {
 
   return (
     <div>
-      <h1>My Job Listings</h1>
+      <Home/>
+      
+      <h1> Job Listings</h1>
       {jobs.map((job) => (
-        <div key={job._id}>
-          <h3>{job.position}</h3>
-          <button onClick={() => handleDelete(job._id)}>Delete</button>
-        </div>
+        <JobCard key={job.id} job={job} />     
+        
+
       ))}
     </div>
   );

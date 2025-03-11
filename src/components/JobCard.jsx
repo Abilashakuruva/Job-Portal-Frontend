@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { Link,useNavigate } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
@@ -64,7 +62,6 @@ return (
         >
           View details
         </button>
-  {/*<Link to={`/jobs/${job._id}`} style={{ background: "red", color: "white", padding: "10px", borderRadius: "5px", textDecoration: "none" }}>View details</Link>*/}
 
 </div>
 
