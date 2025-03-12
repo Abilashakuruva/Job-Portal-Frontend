@@ -2,7 +2,8 @@ import axios from "axios";
 
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  //baseURL: "http://localhost:5000/api",
+  baseURL: "https://job-portal-backend-2y1z.onrender.com/api"
 });
 
 export const register = (userData) => API.post("/auth/register", userData);
