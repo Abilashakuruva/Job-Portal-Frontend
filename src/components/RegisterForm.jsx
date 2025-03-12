@@ -50,7 +50,7 @@ const RegisterForm = () => {
           <input type="checkbox" />
           <p style= {{font:"small"}}>By creating an account,I agree to our terms of use and privacy policy</p></div>
           
-          <button type="submit">Create Account</button>
+          <button type="submit">Sign Up</button>
           <p>Already have an account? <a href="/login">Sign In</a></p>
         </form>
         {successMessage && <p style={{ color: "green" }}>{successMessage}</p>}
